@@ -1,0 +1,544 @@
+@font-face {
+    font-family: 'DSEG14'; /* Gewünschter Name */
+    src: url('./Data/DSEG14Classic/DSEG14Classic-Regular.woff') 
+              format('woff'), 
+             /* für moderne Browser */
+         url('./Data/DSEG14Classic/DSEG14Classic-Regular.ttf') 
+              format('truetype');
+            /* für Safari, Android, iOS */
+   }
+
+body {
+    margin: 0px;
+    background-color: #111111;
+    overflow-x: hidden;
+}
+
+.overview {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+}
+
+.LoadingScreen {
+    position: fixed;
+    z-index: 998;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40vh;
+    text-align: center;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+}
+
+.Header {
+    z-index: 999;
+    position: fixed;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 60px;
+    color: rgb(200, 200, 200);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17pt;
+    border-bottom: 1px solid black;
+}
+
+.Header img {
+    position: absolute;
+    height: 100%;
+    left: 0;
+}
+
+.HeaderLink {
+    display: flex;
+    padding-right:  2%;
+    padding-left: 3%;
+    height: inherit;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(215, 194, 141, 0.15);
+    background-color: rgba(252, 204, 204, 0);
+    color: white;
+    text-decoration: none;
+    
+}
+
+.HeaderLink:hover {
+    color: #cda95b;
+    box-shadow: 2px 2px 10px rgba(252, 204, 204, 0.267);
+}
+
+.HeaderLinkAnmeldung {
+    box-shadow: 2px 2px 15px rgba(252, 204, 204, 0.312);
+}
+
+.Footer {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-content: flex-start;
+    align-items: start-start;
+    text-align: left;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-bottom: 2px;
+}
+
+.Footer img {
+    height: 20vh;
+    padding-right: 5vw;
+    top: 0;
+}
+
+.Footer div {
+    color: rgb(184, 185, 179);
+    padding-right: 5vw;
+    height: 15vh;
+}
+
+.toggleImpressum, .toggleDatenschutz {
+    cursor: pointer;
+}
+
+.toggleImpressum:hover, .toggleDatenschutz:hover {
+    color: #CDA95B;
+}
+
+.FooterImpressum {
+    height: fit-content;
+}
+
+.FooterImpressum div {
+    height: fit-content;
+}
+
+.FooterImpressum p {
+    margin: 0;
+    padding: 0;
+}
+
+.FooterImpressum h3 {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+.FooterDatenschutz p {
+    margin: 0;
+    padding: 0;
+}
+
+.FooterDatenschutz h3 {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: rgb(184, 185, 179);
+}
+
+.Footer a:hover {
+    color: #cda95b;
+}
+
+.FooterEnd:last-child {
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+.TimerComponent {
+    height: 100vh;
+    width: 99vw;
+    background: rgb(17,17,17);
+    background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 5%, rgba(34,34,34,1) 100%);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.Timer {
+    z-index: 1;
+    position: relative;
+    right: -43%;
+    top: 30%;
+    width: 10vw;
+    height: 5vw;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(184, 185, 179);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TimerLive {
+    z-index: 1;
+    position: absolute;
+    left: 28vw;
+    top: 30vh;
+    width: 10vw;
+    height: 5vw;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(184, 185, 179);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Live {
+    z-index: 0;
+    position: absolute;
+    right: 28vw;
+    top: 30vh;
+    width: 10vw;
+    height: 5vw;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(184, 185, 179);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LiveInAv {
+    position: absolute;
+    top: 0;
+    width: 10vw;
+    transform: translateY(-79%);
+    font-size: 2.2vw;
+}
+
+.SVGDot {
+    width: 10vw;
+    height: 10vw;
+}
+
+.showLive {
+    position: absolute;
+    background-color: #cda95bc9;
+    color: inherit;
+    width: 10vw;
+    min-width: 110px;
+    top: 2.2vw;
+    height: 3vw;
+    border: 2px solid #5d4d2c;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.4vw;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.showLive div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    top: 25%;
+}
+
+.LiveAvailable {
+    border: 1px rgb(19,19,19) solid;
+    border-radius: 10px;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2vw;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.days {
+    padding-right: 20%;
+    font-family: DSEG14;
+}
+
+.days div {
+    padding: 05%;
+    background-color: black;
+    width: 5vw;
+    box-shadow: .15vw .15vw 0vw grey;
+}
+
+.hours {
+    padding-right: 30%;
+    font-family: DSEG14;
+}
+
+.hours div {
+    padding: 5%;
+    background-color: black;
+    width: 5vw;
+    box-shadow: .15vw .15vw 0vw grey;
+}
+
+.minute div {
+    font-family: DSEG14;
+    background-color: black;
+    padding: 5%;
+    width: 5vw;
+    box-shadow: .15vw .15vw 0vw grey;
+}
+
+.TimerBackground{
+    position: absolute;
+    transform: translate(0%, -20%);
+    min-width: 25vw;
+    height: 12vw;
+    background: rgb(51,51,51);
+    background: linear-gradient(152deg, rgb(20, 20, 20) 0%, rgba(24, 25, 25) 24%, rgb(27, 27, 27) 45%, rgba(23, 25, 24) 72%, rgb(20, 20, 20) 100%);
+    z-index: -1;
+    border-radius: 5%;
+    border: 0.25rem solid rgb(20, 20, 20);
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.301);
+}
+
+.LiveBackground{
+    position: absolute;
+    transform: translate(0%, -20%);
+    min-width: 25vw;
+    height: 12vw;
+    background: rgb(51,51,51);
+    background: linear-gradient(152deg, rgb(20, 20, 20) 0%, rgba(24, 25, 25) 24%, rgb(27, 27, 27) 45%, rgba(23, 25, 24) 72%, rgb(20, 20, 20) 100%);
+    z-index: -1;
+    border-radius: 5%;
+    border: 0.25rem solid rgb(20, 20, 20);
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.301);
+}
+
+.TimerGlass {
+    position: absolute;
+    transform: translate(0%, -20%);
+    min-width: 25vw;
+    height: 12vw;
+    background: #CDA95B;
+    background: linear-gradient(150deg, rgba(43, 39, 29, 0.15) 0%, rgba(85, 76, 57, 0.15) 24%, rgba(64, 56, 39, 0.15) 45%, rgba(65, 58, 43, 0.15) 72%, rgba(43, 39, 29, 0.15) 100%);
+    border-radius: 5%;
+    border: 0.25rem solid rgb(20, 20, 20);
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.301);
+}
+
+.LiveIn {
+    position: absolute;
+    transform: translate(0%, -280%);
+    font-size: 2.2vw;
+}
+
+.d {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    transform: translate(1vw);
+}
+
+.h {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    transform: translate(1.9vw);
+}
+
+.min {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    transform: translate(0.9vw);
+}
+
+.HomeTeilnahme {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 45vw;
+    right: 15vw;
+    top: 55vh;
+    font-size: 1.5vw;
+    color: rgb(184, 185, 179);
+    hyphens: auto;
+}
+
+.PlayDate {
+    color: #CDA95B;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.HomeTeilnahmeIMG {
+    top: 55vh;
+    width: 20vw;
+    position: absolute;
+    left: 20vw;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.592);
+    border-radius: 5px;
+}
+
+.SocialComponent {
+    background: rgb(34,34,34);
+    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgb(240, 240, 240) 5%);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.SocialWall {
+    margin-top: 0;
+    padding-top: 10%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Sponsors {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: rgb(34,34,34);
+    background: linear-gradient(180deg, rgb(240, 240, 240) 0%, rgba(223,223,223,1) 5%);
+}
+
+.Sponsors h1 {
+    padding-top: 10%;
+}
+
+.Sponsors h2 {
+    padding-top: 3vh;
+}
+
+.Grid-Sponsor-Platinum {
+    width: 20vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Grid-Sponsor-Gold {
+    width: 20vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+}
+
+.Grid-Sponsor-Silver {
+    background-color: white;
+    width: 15vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.Grid-Sponsor-Bronze {
+    width: 15vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+}
+
+.FAQComponent, .ReglementComponent, .AnmeldungComponent, .SpielplanComponent, .P404Component {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgb(34,34,34);
+    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgb(240, 240, 240) 5%, rgb(240, 240, 240) 95%, rgba(223,223,223,1) 100%);
+    color: rgb(34,34,34);
+    top: 60px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.FAQComponent h2 {
+    padding-top: 2vh;
+}
+
+.GesuchAuswertige {
+    text-decoration: none;
+    color: #CDA95B;
+}
+
+.leaflet-container { 
+    width: 100%;
+    height: 400px;
+    align-content: center;
+    z-index: 0;
+    position: relative;
+    top: 0 ;
+    right: 0;
+    background: black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.romanCount {
+    font-size: 27px;
+    font-family: serif;
+}
+
+.ReglementComponent li {
+    padding-bottom: 5px;
+}
+
+.Link404 {
+    text-decoration: none;
+    color: #111111;
+    font-size: x-large;
+}
+
+.Link404:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.Teamcontainer {
+    display: block;
+    padding-top: 20%;
+    align-items: center;
+    width: 250px;
+    height: 175px;
+    color: white;
+    border: 2px solid #3054367e;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px rgb(103, 128, 103);
+    text-shadow: 0 0 3px #111111;
+}
+
+.TeamWrapper {
+    padding-right: 40px;
+}
+
+.Teamcontainer h3 {
+    width: 100%;
+    padding-top: 40%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: line;
+    text-underline-offset: 10px;
+}
+
+.Teamcontainer p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.TeamsBGProvider {
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(203,253,45,1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /* <- here it is */
+}
