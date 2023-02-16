@@ -66,18 +66,18 @@ class TimerPhone extends Component {
                         <h1 className='LoadingScreen'>Loading...</h1>}
                     {this.state.today !== 99 &&
                         <>
-                            <div className='LiveIn'>Anpfiff in</div>
-                            <div className='days'>
-                                <div>{this.state.today}</div> <p className='d'>DAYS</p>
+                            <div className='LiveInPhone'>Anpfiff in</div>
+                            <div className='daysPhone'>
+                                <div>{this.state.today}</div> <p className='dPhone'>DAYS</p>
                             </div>
-                            <div className='hours'>
-                                <div>{this.state.hour}</div> <p className='h'>HRS</p>
+                            <div className='hoursPhone'>
+                                <div>{this.state.hour}</div> <p className='hPhone'>HRS</p>
                             </div>
-                            <div className='minute'>
-                                <div>{this.state.minute}</div> <p className='min'>MINS</p>
+                            <div className='minutePhone'>
+                                <div>{this.state.minute}</div> <p className='minPhone'>MINS</p>
                             </div>
-                            <div className='TimerBackground' />
-                            <div className='TimerGlass' />
+                            <div className='TimerBackgroundPhone' />
+                            <div className='TimerGlassPhone' />
                         </>}
                 </div>
                 <img src={Logo_Gruempi_full_colorvektor} alt='Logo Grümpi 2023' className='HomeTeilnahmeIMGPhone' />

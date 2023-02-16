@@ -649,14 +649,13 @@ body {
 }
 
 .TimerPhone {
-    scale: 3.2;
     z-index: 1;
     position: relative;
-    right: -43%;
+    left: 35%;
     top: 20%;
-    width: 10vw;
-    height: 5vw;
-    font-size: 3vw;
+    width: 30vw;
+    height: 30vw;
+    font-size: 6vw;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(184, 185, 179);
     font-weight: 300;
@@ -665,25 +664,107 @@ body {
     align-items: center;
 }
 
+.LiveInPhone {
+    position: absolute;
+    transform: translate(0%, -280%);
+    font-size: 5.4vw;
+    font-weight: 600;
+}
+
 .HomeTeilnahmePhone {
-    scale: 2;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    left: 30vw;
-    right: 30vw;
-    top: calc(20% + 5vw + 15vh + 50vw);
-    font-size: 1vh;
+    left: 15vw;
+    right: 15vw;
+    top: calc(20% + 5vw + 15vh + 55vw);
+    font-size: 2vh;
     color: rgb(184, 185, 179);
     hyphens: auto;
 }
 
 .HomeTeilnahmeIMGPhone {
-    scale: 2;
     top: calc(20% + 5vw + 15vh);
-    width: 20vw;
-    max-width: 40vh;
+    width: 50vw;
     position: absolute;
-    left: 38vw;
+    left: 25vw;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.592);
     border-radius: 5px;
+}
+
+.daysPhone {
+    padding-right: 20%;
+    font-family: DSEG14;
+}
+
+.daysPhone div {
+    padding: 05%;
+    background-color: black;
+    width: 10vw;
+    box-shadow: .15vw .15vw 0vw grey;
+}
+
+.hoursPhone {
+    padding-right: 30%;
+    font-family: DSEG14;
+}
+
+.hoursPhone div {
+    padding: 5%;
+    background-color: black;
+    width: 10vw;
+    box-shadow: .15vw .15vw 0vw grey;
+}
+
+.minutePhone div {
+    font-family: DSEG14;
+    background-color: black;
+    padding: 5%;
+    width: 10vw;
+    box-shadow: .15vw .15vw 0vw grey;
+}
+
+.TimerBackgroundPhone{
+    position: absolute;
+    transform: translate(0%, -20%);
+    min-width: 55vw;
+    height: 30vw;
+    background: rgb(51,51,51);
+    background: linear-gradient(152deg, rgb(20, 20, 20) 0%, rgba(24, 25, 25) 24%, rgb(27, 27, 27) 45%, rgba(23, 25, 24) 72%, rgb(20, 20, 20) 100%);
+    z-index: -1;
+    border-radius: 5%;
+    border: 0.25rem solid rgb(20, 20, 20);
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.301);
+}
+
+.TimerGlassPhone {
+    position: absolute;
+    transform: translate(0%, -20%);
+    min-width: 55vw;
+    height: 30vw;
+    background: #CDA95B;
+    background: linear-gradient(150deg, rgba(43, 39, 29, 0.15) 0%, rgba(85, 76, 57, 0.15) 24%, rgba(64, 56, 39, 0.15) 45%, rgba(65, 58, 43, 0.15) 72%, rgba(43, 39, 29, 0.15) 100%);
+    border-radius: 5%;
+    border: 0.25rem solid rgb(20, 20, 20);
+    box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.301);
+}
+
+.dPhone {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2vw;
+    font-weight: 500;
+    transform: translate(1vw);
+}
+
+.hPhone {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2vw;
+    font-weight: 500;
+    transform: translate(1.9vw);
+}
+
+.minPhone {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.2vw;
+    font-weight: 500;
+    transform: translate(0.9vw);
 }
