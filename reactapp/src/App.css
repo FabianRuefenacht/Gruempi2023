@@ -14,12 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-.overview {
-    margin: 0px;
-    width: 100%;
-    height: 100vh;
-}
-
 .LoadingScreen {
     position: fixed;
     z-index: 998;
@@ -153,8 +147,10 @@ body {
 }
 
 .TimerComponent {
+    position: relative;
+    top: 60px;
     height: 100vh;
-    width: 99vw;
+    width: 100vw;
     background: rgb(17,17,17);
     background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(34,34,34,1) 5%, rgba(34,34,34,1) 100%);
     padding-bottom: 0;
@@ -376,6 +372,7 @@ body {
 .HomeTeilnahmeIMG {
     top: 55vh;
     width: 20vw;
+    max-width: 40vh;
     position: absolute;
     left: 20vw;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.592);
@@ -390,7 +387,7 @@ body {
 }
 
 .SocialWall {
-    margin-top: 0;
+    margin-top: 60px;
     padding-top: 10%;
     padding-left: 15vw;
     padding-right: 15vw;
@@ -444,12 +441,16 @@ body {
     background-color: white;
 }
 
-.FAQComponent, .ReglementComponent, .AnmeldungComponent, .SpielplanComponent, .P404Component {
+.FAQComponent,
+.ReglementComponent,
+.AnmeldungComponent,
+.SpielplanComponent,
+.P404Component {
     position: relative;
-    padding-top: 5%;
+    padding-top: 60px;
     padding-bottom: 5%;
     background: rgb(34,34,34);
-    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgb(240, 240, 240) 5%, rgb(240, 240, 240) 95%, rgba(223,223,223,1) 100%);
+    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgb(240, 240, 240) 5vh, rgb(240, 240, 240) 95%, rgba(223,223,223,1) 100%);
     color: rgb(34,34,34);
     top: 60px;
     padding-left: 15vw;
@@ -515,6 +516,7 @@ body {
 
 .TeamWrapper {
     padding-right: 40px;
+    padding-bottom: 30px;
 }
 
 .Teamcontainer h3 {
@@ -541,4 +543,147 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  /* <- here it is */
+}
+
+/*Phone*/
+.BurgerWrapper {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    background-color: #111111;
+    color: rgb(200, 200, 200);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17pt;
+    border-bottom: 1px solid black;
+}
+
+.BurgerWrapper > aside > .HeaderLink {
+    padding-inline: 50px;
+    padding-block: 10px;
+}
+
+.BurgerWrapper > aside > .HeaderLink:last-child {
+    padding-bottom: 100vh;
+}
+
+.InstaPhone {
+    padding-left: calc(50% - 164px);
+}
+
+.Sponsors {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 7vw;
+    padding-right: 5vw;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+    background: rgb(34,34,34);
+    background: linear-gradient(180deg, rgb(240, 240, 240) 0%, rgba(223,223,223,1) 5%);
+}
+
+.Grid-Sponsor-Platinum-Phone {
+    width: 40vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Grid-Sponsor-Gold-Phone {
+    width: 40vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Grid-Sponsor-Silver-Phone {
+    background-color: white;
+    width: 27vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.Grid-Sponsor-Bronze-Phone {
+    width: 27vw;
+    padding: 10px;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+}
+
+.FooterPhone {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-content: flex-start;
+    align-items: start-start;
+    text-align: left;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-bottom: 2px;
+}
+
+.FooterPhone {
+    padding-inline: 7vw !important;
+}
+
+.FooterImpressumPhone,
+.FooterDatenschutzPhone {
+    position: absolute;
+    transform: translateY(20vh);
+}
+
+.FAQComponentPhone,
+.ReglementComponentPhone,
+.AnmeldungComponentPhone,
+.SpielplanComponentPhone,
+.P404ComponentPhone {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 5%;
+    background: rgb(34,34,34);
+    background: linear-gradient(180deg, rgba(34,34,34,1) 0%, rgb(240, 240, 240) 5vh, rgb(240, 240, 240) 95%, rgba(223,223,223,1) 100%);
+    color: rgb(34,34,34);
+    top: 60px;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.TimerPhone {
+    scale: 3.2;
+    z-index: 1;
+    position: relative;
+    right: -43%;
+    top: 20%;
+    width: 10vw;
+    height: 5vw;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(184, 185, 179);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeTeilnahmePhone {
+    scale: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 30vw;
+    right: 30vw;
+    top: calc(20% + 5vw + 15vh + 50vw);
+    font-size: 1vh;
+    color: rgb(184, 185, 179);
+    hyphens: auto;
+}
+
+.HomeTeilnahmeIMGPhone {
+    scale: 2;
+    top: calc(20% + 5vw + 15vh);
+    width: 20vw;
+    max-width: 40vh;
+    position: absolute;
+    left: 38vw;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.592);
+    border-radius: 5px;
 }
