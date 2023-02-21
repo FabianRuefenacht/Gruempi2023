@@ -24,6 +24,18 @@ export default function Map(props) {
         iconUrl: 'https://xn--grmpi2023-r9a.sourcelab.ch/gruempimapicons/ball-football-icon.svg'
     })
 
+    var BallIcon1 = new LeafIcon({
+        iconUrl: 'https://xn--grmpi2023-r9a.sourcelab.ch/gruempimapicons/ball-football-icon1.svg'
+    })
+
+    var BallIcon2 = new LeafIcon({
+        iconUrl: 'https://xn--grmpi2023-r9a.sourcelab.ch/gruempimapicons/ball-football-icon2.svg'
+    })
+
+    var BallIcon3 = new LeafIcon({
+        iconUrl: 'https://xn--grmpi2023-r9a.sourcelab.ch/gruempimapicons/ball-football-icon3.svg'
+    })
+
     var SpeakerIcon = new LeafIcon({
         iconUrl: 'https://xn--grmpi2023-r9a.sourcelab.ch/gruempimapicons/loudspeaker-icon.svg'
     })
@@ -33,7 +45,7 @@ export default function Map(props) {
     })
 
   return (
-    <MapContainer center={[47.53402694234208, 7.64067503441953]}
+    <MapContainer center={props.center}
                                 zoom={props.zoom}
                                 scrollWheelZoom={false}
                                 maxBounds={[[-90,-180],[90,180]]}
@@ -71,17 +83,17 @@ export default function Map(props) {
                             <Popup>Sanität</Popup>
                         </Marker>
                         <Marker
-                        icon={BallIcon}
+                        icon={BallIcon1}
                         position={[47.53328651456408, 7.639940750805408]}>
                             <Popup>Platz 1</Popup>
                         </Marker>
                         <Marker
-                        icon={BallIcon}
+                        icon={BallIcon2}
                         position={[47.53335411628794, 7.639545806321593]}>
                             <Popup>Platz 2</Popup>
                         </Marker>
                         <Marker
-                        icon={BallIcon}
+                        icon={BallIcon3}
                         position={[47.53344237396243, 7.6391007984532]}>
                             <Popup>Platz 3</Popup>
                         </Marker>

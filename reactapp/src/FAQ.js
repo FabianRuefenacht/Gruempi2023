@@ -9,7 +9,7 @@ class FAQ extends Component {
                 <h1>FAQ</h1>
                 <h2>Wo findet das Grümpi 2023 statt?</h2>
                 <p>Das Grümpi findet auch in diesem Jahr wieder auf der Spielwiese Kriegacker statt.</p>
-                <Map zoom={17} />
+                <Map zoom={17} center={[47.534025, 7.641420]} />
                 <h2>Wann findet das FHNW Grümpi 2023 statt?</h2>
                 <p>Das Grümpi findet am 12. Mai 2022 statt, der Anpfiff zum ersten Spiel ist voraussichtlich um 17.00 Uhr.</p>
                 <p>Wenn das Wetter das Fussballspielen nicht zulässt, ist der Ausweichtermin am XX.XX.2023.</p>

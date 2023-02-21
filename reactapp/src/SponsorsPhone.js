@@ -55,7 +55,7 @@ class SponsorsPhone extends Component {
 
         return (
             <>
-                <div className='Sponsors'>
+                <div className='SponsorsPhone'>
                     <h1>Sponsoren</h1>
                     <h2>Platin</h2>
                     <Grid container spacing={0} gap={2}>

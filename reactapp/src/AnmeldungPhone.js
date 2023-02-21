@@ -223,8 +223,8 @@ export default function AnmeldungPhone() {
         {Teams.registered.map((renderTeams) => {return(
             <div key={renderTeams.id} className='TeamWrapper'>
                 <Grid item className='Teamcontainer TeamsBGProvider' >
-                    <h3>{renderTeams.data.Teamname}</h3><br/>
-                    <p>{JSON.parse(renderTeams.data.male) + JSON.parse(renderTeams.data.female) + JSON.parse(renderTeams.data.div)} Spielende</p>
+                    <h3 className='TeamsText'>{renderTeams.data.Teamname}</h3><br/>
+                    <p className='TeamsText'>{JSON.parse(renderTeams.data.male) + JSON.parse(renderTeams.data.female) + JSON.parse(renderTeams.data.div)} Spielende</p>
                 </Grid>
             </div>)
             })}

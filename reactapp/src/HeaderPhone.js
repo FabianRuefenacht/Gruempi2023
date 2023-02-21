@@ -8,6 +8,7 @@ import P404Phone from './P404Phone';
 import AnmeldungPhone from './AnmeldungPhone';
 import SpielplanPhone from './SpielplanPhone';
 import TimerPhone from './TimerPhone';
+import Logo_Gruempi_ohne_Jahr_color_breitvektor from './Data/Logo/SVG/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg';
 
 export default function HeaderPhone() {
     const [navBar, setNavBar] = useState(false)
@@ -17,22 +18,19 @@ export default function HeaderPhone() {
     return (
         <>
             <div className='BurgerWrapper'>
-                <Hamburger rounded color='white' onToggle={toggled => {
-                    if (toggled) {
-                        setNavBar(true)
-                    } else {
-                        setNavBar(false)
-                    }
-                }} />
+                <div>
+                    <img src={Logo_Gruempi_ohne_Jahr_color_breitvektor} alt='Logo Grümpi 2023' className='Logo' />
+                    <Hamburger rounded color='white' size={32} toggled={navBar} onToggle={() => setNavBar(!navBar)} />
+                </div>
                 {navBar &&
-                    <aside>
-                        <Link to="/" className='HeaderLink'>Home</Link>
-                        <Link to="/FAQ" className='HeaderLink'>FAQ</Link>
-                        <Link to="/Reglement" className='HeaderLink'>Reglement</Link>
+                    <aside className='AsidePhone'>
+                        <Link to="/" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>Home</Link>
+                        <Link to="/FAQ" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>FAQ</Link>
+                        <Link to="/Reglement" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>Reglement</Link>
                         {now >= TablePlan &&
-                            <Link to="/Spielplan" className='HeaderLink'>Spielplan</Link>
+                            <Link to="/Spielplan" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>Spielplan</Link>
                         }
-                        <Link to="/Anmeldung" className='HeaderLink HeaderLinkAnmeldung'>Anmeldung</Link>
+                        <Link to="/Anmeldung" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink HeaderLinkAnmeldung'>Anmeldung</Link>
                     </aside>
                 }
             </div>

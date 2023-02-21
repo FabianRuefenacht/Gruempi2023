@@ -1,0 +1,25 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="Unbenannter_Verlauf_10" x1="0.27015" y1="0.12237" x2="0.8299" y2="1.01915">
+   <stop offset="0" stop-color="#dfbc68"/>
+   <stop offset="0.23" stop-color="#dbb865"/>
+   <stop offset="0.46" stop-color="#cfac5d"/>
+   <stop offset="0.68" stop-color="#bb984f"/>
+   <stop offset="0.91" stop-color="#a07c3c"/>
+   <stop offset="0.99" stop-color="#947034"/>
+  </linearGradient>
+  <linearGradient id="svg_5" x1="0.27015" y1="0.12237" x2="0.8299" y2="1.01915">
+   <stop offset="0" stop-color="#000000" stop-opacity="0.99609"/>
+   <stop offset="0.23" stop-color="#0c0c0a" stop-opacity="0.99219"/>
+   <stop offset="0.46" stop-color="#141009" stop-opacity="0.99219"/>
+   <stop offset="0.68" stop-color="#070605" stop-opacity="0.99219"/>
+   <stop offset="0.91" stop-color="#0c0904" stop-opacity="0.99609"/>
+   <stop offset="0.99" stop-color="#070400" stop-opacity="0.99609"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect rx="5" fill="url(#svg_5)" stroke="null" x="0.00023" y="0.00022" width="100.27733" height="100.83288" id="svg_4"/>
+  <text font-style="normal" font-weight="normal" transform="matrix(4.53711 0 0 4.53711 -175.149 -132.077)" stroke="null" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="24" stroke-width="0" id="svg_6" y="48.42102" x="40.02519" fill="url(#Unbenannter_Verlauf_10)">G</text>
+ </g>
+</svg>
