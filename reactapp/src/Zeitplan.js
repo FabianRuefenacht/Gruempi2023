@@ -99,7 +99,7 @@ export default function Zeitplan() {
                 })}
                 <h4>Halbfinale:</h4>
                 {Halbfinale.map((SemiFPhase, i) => {
-                    return (<Grid container paddingBottom={'10px'} key={i} wrap={false}>
+                    return (<Grid container paddingBottom={'10px'} key={i} wrap={false} borderBottom={'1px solid #d0d0d0'}>
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Team1}</Grid>
@@ -111,7 +111,7 @@ export default function Zeitplan() {
                 })}
                 <h4>Finale:</h4>
                 {Finale.map((Finale, i) => {
-                    return (<Grid container paddingBottom={'10px'} key={i} wrap={false}>
+                    return (<Grid container paddingBottom={'10px'} key={i} wrap={false} borderBottom={'2px solid #d0d0d0'}>
                         <Grid item minWidth={'70px'}>{Finale.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{Finale.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Team1}</Grid>
