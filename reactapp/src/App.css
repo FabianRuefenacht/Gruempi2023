@@ -12,16 +12,19 @@
 ::-webkit-scrollbar {
     width: 10px;
     height: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #cda95b72; 
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #cda95b; 
-  }
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cda95b72;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cda95b;
+}
 
 body {
     margin: 0px;
@@ -476,6 +479,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.AnmeldungComponentPhone,
+.TeamsComponent {
+    overflow-x: auto;
+}
+
 .FAQComponent h2 {
     padding-top: 2vh;
 }
@@ -630,11 +638,11 @@ body {
     min-width: 300px;
 }
 
-.TeamViewBox > * {
+.TeamViewBox>* {
     padding: 15px;
 }
 
-.TeamViewBox > h3 {
+.TeamViewBox>h3 {
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0;

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { Grid } from '@mui/material';
+import P404 from './P404';
 
 
 
@@ -61,16 +62,16 @@ export default function Team() {
 
     return (
         <>
+        {Games.length === 0 ? <P404 /> :
             <div className='TeamsComponent'>
                 <h1>
                     Team {id}
                 </h1>
-                {console.log(Games)}
                 <Grid container>
                     {Games.map((Teamname, i) => {
                         return (
-                            <div className='TeamWrapper'>
-                                <Grid item key={i} className='TeamViewBox'>
+                            <div key={i} className='TeamWrapper'>
+                                <Grid item className='TeamViewBox'>
                                     <div>
                                         <h3>
                                             {Teamname.Data.Team1}
@@ -103,6 +104,7 @@ export default function Team() {
                     })}
                 </Grid>
             </div>
+            }
         </>
     )
 }

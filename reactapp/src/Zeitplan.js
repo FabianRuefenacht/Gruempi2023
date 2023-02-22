@@ -11,7 +11,7 @@ export default function Zeitplan() {
                     "Anpfiff": "17:00",
                     "Feld": "A",
                     "Team1": "Daten werden geladen",
-                    "Endresultat": "0:0",
+                    "Endresultat": "-1:-1",
                     "Team2": "Daten werden geladen",
                     "Schiedsrichter": "Daten werden geladen"
                 }
@@ -22,7 +22,7 @@ export default function Zeitplan() {
                     "Anpfiff": "19:00",
                     "Feld": "B",
                     "Team1": "Daten werden geladen",
-                    "Endresultat": "0:0",
+                    "Endresultat": "-1:-1",
                     "Team2": "Daten werden geladen",
                     "Schiedsrichter": "Daten werden geladen"
                 }
@@ -33,7 +33,7 @@ export default function Zeitplan() {
                     "Anpfiff": "19:30",
                     "Feld": "B",
                     "Team1": "Daten werden geladen",
-                    "Endresultat": "0:0",
+                    "Endresultat": "-1:-1",
                     "Team2": "Daten werden geladen",
                     "Schiedsrichter": "Daten werden geladen"
                 }
@@ -91,7 +91,7 @@ export default function Zeitplan() {
                         <Grid item minWidth={'70px'}>{GrpPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{GrpPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Team1}</Grid>
-                        <Grid item minWidth={'90px'}>{GrpPhase.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'90px'}>{GrpPhase.Data.Endresultat === '-1:-1' ? '' : GrpPhase.Data.Endresultat}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Team2}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Schiedsrichter}</Grid>
                     </ Grid>
@@ -103,7 +103,7 @@ export default function Zeitplan() {
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Team1}</Grid>
-                        <Grid item minWidth={'90px'}>{SemiFPhase.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'90px'}>{SemiFPhase.Data.Endresultat === '-1:-1' ? '' : SemiFPhase.Data.Endresultat}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Team2}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Schiedsrichter}</Grid>
                     </ Grid>
@@ -115,7 +115,7 @@ export default function Zeitplan() {
                         <Grid item minWidth={'70px'}>{Finale.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{Finale.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Team1}</Grid>
-                        <Grid item minWidth={'90px'}>{Finale.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'90px'}>{Finale.Data.Endresultat === '-1:-1' ? '' : Finale.Data.Endresultat}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Team2}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Schiedsrichter}</Grid>
                     </ Grid>
