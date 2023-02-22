@@ -7,6 +7,7 @@ import ReglementPhone from './ReglementPhone';
 import P404Phone from './P404Phone';
 import AnmeldungPhone from './AnmeldungPhone';
 import SpielplanPhone from './SpielplanPhone';
+import Team from './Team';
 import TimerPhone from './TimerPhone';
 import Logo_Gruempi_ohne_Jahr_color_breitvektor from './Data/Logo/SVG/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg';
 
@@ -42,6 +43,7 @@ export default function HeaderPhone() {
                 <Route path='/live' element={<SpielplanPhone />} />
                 <Route path='/Spielplan' element={<SpielplanPhone />} />
                 <Route path='/*' element={<><P404Phone /></>} />
+                <Route path='/Teams/:id' element={<><Team /></>} />
             </Routes>
         </>
     )

@@ -25,7 +25,7 @@ class Instagram extends Component {
                 <h1 className='SocialWall'>
                     Social Wall
                 </h1>
-                <Grid container>
+                <Grid container  wrap='nowrap' overflow={'scroll'}>
                     {this.state.InstaPosts.Instagram.map((renderIG) => {
                         return (
                             <Grid item key={renderIG.key} className='InstaPhone'>

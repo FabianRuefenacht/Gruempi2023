@@ -25,16 +25,18 @@ class Instagram extends Component {
                 <h1 className='SocialWall'>
                     Social Wall
                 </h1>
-                <Grid container paddingLeft={"15vw"} paddingRight={"15vw"} spacing={0}>
+                <div style={{paddingInline: '15vw'}}>
+                <Grid container wrap={'nowrap'} width={'70vw'} className={'InstaScroll'}>
                     {this.state.InstaPosts.Instagram.map((renderIG) => {
                         return (
                             <Grid item key={renderIG.key}>
-                                <div style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
-                                    <InstagramEmbed url={renderIG.url} width={328} />
+                                <div style={{ display: 'flex', justifyContent: 'center', padding: '10px'}} className='Embed'>
+                                    <InstagramEmbed url={renderIG.url} width={328}/>
                                 </div>
                             </Grid>)
                     })}
                 </Grid>
+                </div>
             </div>
         )
     }

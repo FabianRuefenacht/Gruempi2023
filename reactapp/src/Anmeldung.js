@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Grid, TextField } from '@mui/material';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Anmeldung() {
     const ipr = {
@@ -226,7 +227,9 @@ export default function Anmeldung() {
                     return (
                         <div key={renderTeams.id} className='TeamWrapper'>
                             <Grid item className='Teamcontainer TeamsBGProvider' >
-                                <h3>{renderTeams.data.Teamname}</h3><br />
+                                <Link to={`/Teams/${renderTeams.data.Teamname}`} className='texteco'>
+                                    <h3>{renderTeams.data.Teamname}</h3><br />
+                                </Link>
                                 <p>{JSON.parse(renderTeams.data.male) + JSON.parse(renderTeams.data.female) + JSON.parse(renderTeams.data.div)} Spielende</p>
                             </Grid>
                         </div>)

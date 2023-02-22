@@ -7,6 +7,22 @@
     /* für Safari, Android, iOS */
 }
 
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cda95b72; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cda95b; 
+  }
+
 body {
     margin: 0px;
     background-color: #111111;
@@ -446,7 +462,8 @@ body {
 .ReglementComponent,
 .AnmeldungComponent,
 .SpielplanComponent,
-.P404Component {
+.P404Component,
+.TeamsComponent {
     position: relative;
     padding-top: 60px;
     padding-bottom: 5%;
@@ -589,11 +606,60 @@ body {
     overflow-x: auto;
     display: block;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
+}
+
+.InstaScroll {
+    position: relative;
+    overflow-x: auto;
+    z-index: 0;
+    border: 2px solid rgba(128, 128, 128, 0.055);
+    border-right: 5px solid rgba(128, 128, 128, 0.055);
+    border-top: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
 }
 
 .GruppenCenter {
     width: 550px;
+}
+
+.TeamViewBox {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.TeamViewBox > * {
+    padding: 15px;
+}
+
+.TeamViewBox > h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.vs {
+    color: grey;
+}
+
+.SideInfo {
+    color: grey;
+    padding-block: 0;
+    margin-block: 0;
+}
+
+.SideInfoPadd {
+    color: grey;
+    padding-block: 0;
+    margin-block: 0;
+    padding-top: 15px;
+}
+
+.texteco {
+    text-decoration: none;
 }
 
 /*Phone*/

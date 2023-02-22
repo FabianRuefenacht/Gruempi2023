@@ -8,6 +8,7 @@ import Anmeldung from './Anmeldung';
 import { Route, Routes, Link } from 'react-router-dom';
 import Spielplan from './Spielplan';
 import P404 from './P404';
+import Team from './Team';
 
 class HeaderPC extends Component {
   render() {
@@ -28,6 +29,7 @@ class HeaderPC extends Component {
           <Route path='/live' element={<Spielplan />} />
           <Route path='/Spielplan' element={<Spielplan />} />
           <Route path='/*' element={<><P404 /></>} />
+          <Route path='/Teams/:id' element={<><Team /></>} />
         </Routes>
       </>
     );
