@@ -91,7 +91,7 @@ class Reglement extends Component {
                             <li type="1">Spielregeln</li>
                         </h3>
                         <ol>
-                            <li type="a">s wird grundsätzlich nach den Regeln des SFV gespielt. Die Abseits- und die Rückpassregeln sind aufgehoben.</li>
+                            <li type="a">Es wird grundsätzlich nach den Regeln des SFV gespielt. Die Abseits- und die Rückpassregeln sind aufgehoben.</li>
                             <li type="a">Felder und Tore sind verkleinert.</li>
                             <li type="a">Die Spieldauer beträgt 10 Minuten ohne Seitenwechsel.</li>
                             <li type="a">Bei unentschiedenem Spielausgang in den KO-Spielen entscheidet ein Penaltyschiessen. Es gewinnt dasjenige Team, welches von drei Penalties mehr Treffer erzielt hat.
@@ -113,7 +113,6 @@ class Reglement extends Component {
                             <li type="1">Preise</li>
                         </h3>
                         <ol>
-                            <li type="a">Die Gruppenersten erhalten einen Preis.</li>
                             <li type="a">Der Turniersieger erhält einen Wanderpokal.</li>
                         </ol>
                         <h3>

@@ -11,10 +11,10 @@ import Sponsors from './Sponsors';
 
 
 export default function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+  const [isMobile, setIsMobile] = useState(window.screen.width <= 500);
 
   useEffect(() => {
-    const interval = setInterval(() => setIsMobile(window.innerWidth <= 500), 1000);
+    const interval = setInterval(() => setIsMobile(window.screen.width <= 500), 1000);
     return () => {
       clearInterval(interval);
     };

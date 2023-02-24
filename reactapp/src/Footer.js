@@ -46,7 +46,7 @@ class Footer extends Component {
                             <h3>Haftungsausschluss</h3>
                             <p className="FooterEnd">Für Schäden materieller oder immaterieller Art, welche im Zusammenhang mit der Nutzung oder nicht
                                 Nutzung der angebotenen Informationen, durch Missbrauch der Verbindungen oder durch technische Störungen
-                                entstehen, übernimmt die Klasse G2021 keine Haftung.</p>
+                                entstehen, übernimmt der Studierendenverein G2021 keine Haftung.</p>
                         </div>
                     </div>
                 }

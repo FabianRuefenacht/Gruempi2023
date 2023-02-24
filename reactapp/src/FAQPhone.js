@@ -12,7 +12,7 @@ class FAQPhone extends Component {
                     <Map zoom={17} center={[47.534025, 7.641420]} />
                     <h2>Wann findet das FHNW Grümpi 2023 statt?</h2>
                     <p>Das Grümpi findet am 12. Mai 2022 statt, der Anpfiff zum ersten Spiel ist voraussichtlich um 17.00 Uhr.</p>
-                    <p>Wenn das Wetter das Fussballspielen nicht zulässt, ist der Ausweichtermin am XX.XX.2023.</p>
+                    <p>Wenn das Wetter das Fussballspielen nicht zulässt, ist der Ausweichtermin am 25. Mai 2023.</p>
                     <h2>Wer darf am Grümpi teilnehmen?</h2>
                     <p>
                         Wie auch in den letzten Jahren dürfen alle Studierenden und Mitarbeitenden der FHNW Muttenz teilnehmen.
@@ -25,7 +25,7 @@ class FAQPhone extends Component {
                         (Bachelorstudiengang Geomatik, 4. Semester) mit dem Zweck der Organisation des Grümpi's gegründet.
                     </p>
                     <h2>Was kostet die Teilnahme am Grümpi?</h2>
-                    <p>Pro Team ist eine Startgebühr von 25 Franken zu entrichten. Der Betrag kann vor Turnierbeginn am Speakertisch in Bar oder mit Twint gezahlt werden.</p>
+                    <p>Pro Team ist eine Startgebühr von 30 Franken zu entrichten. Der Betrag kann vor Turnierbeginn am Speakertisch in Bar oder mit Twint gezahlt werden.</p>
                     <h2>Noch weitere Fragen?</h2>
                     <p>Weitere Fragen zum Turnier können <a className="GesuchAuswertige" href="mailto: andrea.bricalli@students.fhnw.ch">hier</a> gestellt werden.</p>
                 </div>

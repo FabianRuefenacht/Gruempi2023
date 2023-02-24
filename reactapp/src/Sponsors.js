@@ -44,14 +44,16 @@ class Sponsors extends Component {
         }
     }
 
-    render() {
+    componentDidMount() {
         axios
-            .get("https://vm26.sourcelab.ch/SponsorAPI")
-            .then((response) => {
-                this.setState({ SponsorList: response.data })
-            })
-            .catch((err) => { console.log(err) })
+        .get("https://vm26.sourcelab.ch/SponsorAPI")
+        .then((response) => {
+            this.setState({ SponsorList: response.data })
+        })
+        .catch((err) => { console.log(err) })
+    }
 
+    render() {
         return (
             <>
                 <div className='Sponsors'>

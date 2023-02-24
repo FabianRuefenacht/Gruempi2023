@@ -11,15 +11,17 @@ class Instagram extends Component {
             InstaPosts: { "Instagram": [{ "url": "https://www.instagram.com/p/B-0BTP9AcM9/?utm_source=ig_embed&amp;utm_campaign=loading", "key": 1 }] }
         }
     }
-    render() {
 
+    componentDidMount() {
         axios
             .get("https://vm26.sourcelab.ch/InstaAPI")
             .then((response) => {
                 this.setState({ InstaPosts: response.data })
             })
             .catch((err) => { console.log(err) })
+    }
 
+    render() {
         return (
             <div className='SocialComponent'>
                 <h1 className='SocialWall'>

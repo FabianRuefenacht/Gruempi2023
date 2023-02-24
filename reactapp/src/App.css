@@ -670,6 +670,18 @@ body {
     text-decoration: none;
 }
 
+.ColorPicker {
+    min-width: 250px;
+}
+
+.Shirt {
+    position: relative;
+    width: 97%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*Phone*/
 .BurgerWrapper {
     z-index: 999;
