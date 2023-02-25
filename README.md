@@ -8,4 +8,6 @@ Die mit den Logos der Sponsoren verbundenen Rechten können den Bestimmungen der
 <br /><br />
 <h3>Wiederverwendung</h3>
 Besteht Interesse, diese Website (oder Komonennten derer) in den kommenden Jahren wiederzuverwenden, ist dies grundsätzlich möglich. <br />
-Anfragen diesezüglich können hier, via blabla oder persönlich bei Fabian Rüfenacht gestellt werden.
+Anfragen diesezüglich können bei mir via Mail gestellt werden:
+<br/>
+fabian.ruefenacht@students.fhnw.ch
