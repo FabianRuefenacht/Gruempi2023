@@ -466,7 +466,8 @@ body {
 .AnmeldungComponent,
 .SpielplanComponent,
 .P404Component,
-.TeamsComponent {
+.TeamsComponent,
+.DankeComponent {
     position: relative;
     padding-top: 60px;
     padding-bottom: 5%;
@@ -477,6 +478,24 @@ body {
     padding-left: 15vw;
     padding-right: 15vw;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.DankeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
+    padding: 20px;
+    margin-block: 30vh;
+    box-shadow: 5px 5px 20px rgb(58, 57, 50);
+    background-color: rgb(219, 218, 215);
+    border-radius: 10px;
+}
+
+.DankeWrapper > * {
+    margin: 7px;
 }
 
 .AnmeldungComponentPhone,
@@ -793,7 +812,8 @@ body {
 .ReglementComponentPhone,
 .AnmeldungComponentPhone,
 .SpielplanComponentPhone,
-.P404ComponentPhone {
+.P404ComponentPhone,
+.DankeComponentPhone {
     position: relative;
     padding-top: 60px;
     padding-bottom: 5%;
@@ -963,4 +983,22 @@ body {
 
 .overflowxScrollPhone * {
     max-width: 400px;
+}
+
+.DankeWrapperPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;
+    margin-block: 30vh;
+    box-shadow: 5px 5px 20px rgb(58, 57, 50);
+    background-color: rgb(219, 218, 215);
+    border-radius: 10px;
+}
+
+.DankeWrapperPhone > * {
+    margin: 7px;
 }

@@ -42,7 +42,7 @@ class Reglement extends Component {
                             <li type="1">Teamgrösse</li>
                         </h3>
                         <ol>
-                            <li type="a">Ein Team besteht aus 5 Feldspieler:Innen, sowie einem:r Torhüter:In und maximal 4 Auswechselspieler:Innen.</li>
+                            <li type="a">Ein Team besteht aus 5 Feldspieler:Innen, sowie einem:r Torhüter:In und beliebig vielen Auswechselspieler:Innen.</li>
                             <li type="a">Jede:r Spieler:in kann nur in einem Team eingesetzt werden. Verstösse führen zu Forfait-Niederlagen.</li>
                         </ol>
                         <h3>

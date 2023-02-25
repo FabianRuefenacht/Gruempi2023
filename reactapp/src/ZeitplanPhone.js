@@ -42,19 +42,13 @@ export default function ZeitplanPhone() {
     });
 
     useEffect(() => {
-        let IntervalID =
-            setInterval(() => {
-                axios
-                    .get("https://vm26.sourcelab.ch/ZeitplanAPI")
-                    .then((response) => {
-                        setTimetable(response.data)
-                    })
-                    .catch((err) => { console.log(err) });
-            }, 1000);
-        return () => {
-            clearInterval(IntervalID);
-        };
-    })
+        axios
+            .get("https://vm26.sourcelab.ch/ZeitplanAPI")
+            .then((response) => {
+                setTimetable(response.data)
+            })
+            .catch((err) => { console.log(err) });
+    }, []);
 
     let Gruppenspiele = timetable.Tabelle.filter((entry) => entry.Data.Spielfunktion.includes('Gruppenspiel'));
 
@@ -65,7 +59,7 @@ export default function ZeitplanPhone() {
     return (
         <>
             <div className='overflowxScrollPhone'>
-                <Grid container spacing={2} borderBottom={'1px solid #d0d0d0'} wrap={false} width={'400px'}>
+                <Grid container spacing={2} borderBottom={'1px solid #d0d0d0'} wrap={'nowrap'} width={'400px'}>
                     <Grid item minWidth={'70px'}>
                         <h3>Start</h3>
                     </Grid>
@@ -87,7 +81,7 @@ export default function ZeitplanPhone() {
                 </Grid>
                 <h4>Gruppenspiele:</h4>
                 {Gruppenspiele.map((GrpPhase, i) => {
-                    return (<Grid container key={i} paddingBottom={GrpPhase.Data.Feld === 'C' ? '17px' : '10px'} wrap={false} width={'400px'}>
+                    return (<Grid container key={i} paddingBottom={GrpPhase.Data.Feld === 'C' ? '17px' : '10px'} wrap={'nowrap'} width={'400px'}>
                         <Grid item minWidth={'70px'}>{GrpPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{GrpPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Team1}</Grid>
@@ -99,7 +93,7 @@ export default function ZeitplanPhone() {
                 })}
                 <h4>Halbfinale:</h4>
                 {Halbfinale.map((SemiFPhase, i) => {
-                    return (<Grid container paddingBottom={'10px'} key={i} wrap={false} width={'400px'}>
+                    return (<Grid container paddingBottom={'10px'} key={i} wrap={'nowrap'} width={'400px'}>
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Team1}</Grid>
@@ -111,7 +105,7 @@ export default function ZeitplanPhone() {
                 })}
                 <h4>Finale:</h4>
                 {Finale.map((Finale, i) => {
-                    return (<Grid container paddingBottom={'10px'} key={i} wrap={false} width={'400px'}>
+                    return (<Grid container paddingBottom={'10px'} key={i} wrap={'nowrap'} width={'400px'}>
                         <Grid item minWidth={'70px'}>{Finale.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{Finale.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Team1}</Grid>

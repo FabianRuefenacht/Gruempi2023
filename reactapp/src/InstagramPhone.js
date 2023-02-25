@@ -8,7 +8,7 @@ class Instagram extends Component {
         super(props);
 
         this.state = {
-            InstaPosts: { "Instagram": [{ "url": "https://www.instagram.com/p/B-0BTP9AcM9/?utm_source=ig_embed&amp;utm_campaign=loading", "key": 1 }] }
+            InstaPosts: { "Instagram": [{ "url": "https://www.instagram.com/p/CpFQjATg4AM/?utm_source=ig_embed&amp;utm_campaign=loading", "key": 1 }] }
         }
     }
 

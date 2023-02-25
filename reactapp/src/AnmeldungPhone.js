@@ -49,12 +49,14 @@ export default function AnmeldungPhone() {
         ]
     });
 
-    axios
-        .get("https://vm26.sourcelab.ch/TeamsGruempiAPI")
-        .then((response) => {
-            setTeams({ registered: response.data })
-        })
-        .catch((err) => { console.log(err) })
+    useEffect(() => {
+        axios
+            .get("https://vm26.sourcelab.ch/TeamsGruempiAPI")
+            .then((response) => {
+                setTeams({ registered: response.data })
+            })
+            .catch((err) => { console.log(err) })
+    }, [])
 
     useEffect(() => {
         const TeamNM = window.localStorage.getItem('TeamnameKey');
@@ -107,6 +109,16 @@ export default function AnmeldungPhone() {
             {new Date() < Anmeldeschluss &&
                 <>
                     <form action='https://submit-form.com/eqX8Uq4J'>
+                        <input
+                            type="hidden"
+                            name="_redirect"
+                            value="https://Grümpi2023.sourcelab.ch/Danke"
+                        />
+                        <input
+                            type="hidden"
+                            name="_error"
+                            value="https://Grümpi2023.sourcelab.ch/Ups"
+                        />
                         <h1>Melde dein Team jetzt an:</h1>
                         {showForm && <>
                             <h3>Angaben zum Team</h3>

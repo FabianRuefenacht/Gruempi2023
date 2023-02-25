@@ -9,6 +9,8 @@ import { Route, Routes, Link } from 'react-router-dom';
 import Spielplan from './Spielplan';
 import P404 from './P404';
 import Team from './Team';
+import Danke from './Danke';
+import UPS from './UPS';
 
 class HeaderPC extends Component {
   render() {
@@ -28,8 +30,10 @@ class HeaderPC extends Component {
           <Route path='/Anmeldung' element={<><Anmeldung /></>} />
           <Route path='/live' element={<Spielplan />} />
           <Route path='/Spielplan' element={<Spielplan />} />
-          <Route path='/*' element={<><P404 /></>} />
+          <Route path='/Danke' element={<><Danke /></>} />
+          <Route path='/Ups' element={<><UPS /></>} />
           <Route path='/Teams/:id' element={<><Team /></>} />
+          <Route path='/*' element={<><P404 /></>} />
         </Routes>
       </>
     );

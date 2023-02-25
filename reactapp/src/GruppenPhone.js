@@ -60,24 +60,18 @@ export default function GruppenPhone() {
                     ? -1 : 1);
 
     useEffect(() => {
-        let IntervalID =
-            setInterval(() => {
-                axios
-                    .get("https://vm26.sourcelab.ch/GruppenAPI")
-                    .then((response) => {
-                        setGruppe(response.data)
-                    })
-                    .catch((err) => { console.log(err) });
-            }, 1000);
-        return () => {
-            clearInterval(IntervalID);
-        };
-    })
+        axios
+            .get("https://vm26.sourcelab.ch/GruppenAPI")
+            .then((response) => {
+                setGruppe(response.data)
+            })
+            .catch((err) => { console.log(err) });
+    }, [])
 
     return (
         <>
             <div className='overflowxScrollPhone'>
-                <Grid container spacing={2} wrap={false} maxWidth={'400px'}>
+                <Grid container spacing={2} wrap={'nowrap'} maxWidth={'400px'}>
                     <Grid item minWidth={'70px'}>
                         <h3>Rang</h3>
                     </Grid>
@@ -93,7 +87,7 @@ export default function GruppenPhone() {
                 </Grid>
                 <h3>Gruppe A:</h3>
                 {gruppeAsorted.map((GrA, i) => {
-                    return (<Grid container spacing={2} wrap={false} maxWidth={'400px'}>
+                    return (<Grid container spacing={2} wrap={'nowrap'} maxWidth={'400px'}>
                         <Grid item minWidth={'70px'}>{i + 1}</Grid>
                         <Grid item minWidth={'250px'}>{GrA.Data.Name}</Grid>
                         <Grid item minWidth={'80px'}>{JSON.parse(GrA.Data.Spiele.Spiel1) + JSON.parse(GrA.Data.Spiele.Spiel2) + JSON.parse(GrA.Data.Spiele.Spiel3)}</Grid>
@@ -103,7 +97,7 @@ export default function GruppenPhone() {
                 })}
                 <h3>Gruppe B:</h3>
                 {gruppeBsorted.map((GrB, i) => {
-                    return (<Grid container spacing={2} wrap={false} maxWidth={'400px'}>
+                    return (<Grid container spacing={2} wrap={'nowrap'} maxWidth={'400px'}>
                         <Grid item minWidth={'70px'}>{i + 1}</Grid>
                         <Grid item minWidth={'250px'}>{GrB.Data.Name}</Grid>
                         <Grid item minWidth={'80px'}>{JSON.parse(GrB.Data.Spiele.Spiel1) + JSON.parse(GrB.Data.Spiele.Spiel2) + JSON.parse(GrB.Data.Spiele.Spiel3)}</Grid>
@@ -113,7 +107,7 @@ export default function GruppenPhone() {
                 })}
                 <h3>Gruppe C:</h3>
                 {gruppeCsorted.map((GrC, i) => {
-                    return (<Grid container spacing={2} wrap={false} maxWidth={'400px'}>
+                    return (<Grid container spacing={2} wrap={'nowrap'} maxWidth={'400px'}>
                         <Grid item minWidth={'70px'}>{i + 1}</Grid>
                         <Grid item minWidth={'250px'}>{GrC.Data.Name}</Grid>
                         <Grid item minWidth={'80px'}>{JSON.parse(GrC.Data.Spiele.Spiel1) + JSON.parse(GrC.Data.Spiele.Spiel2) + JSON.parse(GrC.Data.Spiele.Spiel3)}</Grid>
