@@ -11,7 +11,7 @@ class SponsorsPhone extends Component {
                 "Platin": [
                     {
                         "key": 1,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://www.personal.ch/img/img/logo.svg",
                         "url": "https://www.google.com/"
                     }
@@ -19,7 +19,7 @@ class SponsorsPhone extends Component {
                 "Gold": [
                     {
                         "key": 1001,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://www.personal.ch/img/img/logo.svg",
                         "url": "https://www.google.com/"
                     }
@@ -27,7 +27,7 @@ class SponsorsPhone extends Component {
                 "Silber": [
                     {
                         "key": 2001,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://www.personal.ch/img/img/logo.svg",
                         "url": "https://www.google.com/"
                     }
@@ -35,7 +35,7 @@ class SponsorsPhone extends Component {
                 "Bronze": [
                     {
                         "key": 3001,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://www.personal.ch/img/img/logo.svg",
                         "url": "https://www.google.com/"
                     }
