@@ -11,7 +11,7 @@ class Sponsors extends Component {
                 "Platin": [
                     {
                         "key": 1,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://vm26.sourcelab.ch/Sponsors/Platin/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
                         "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
@@ -19,7 +19,7 @@ class Sponsors extends Component {
                 "Gold": [
                     {
                         "key": 1001,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://vm26.sourcelab.ch/Sponsors/Gold/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
                         "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
@@ -27,7 +27,7 @@ class Sponsors extends Component {
                 "Silber": [
                     {
                         "key": 2001,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://vm26.sourcelab.ch/Sponsors/Silber/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
                         "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
@@ -35,7 +35,7 @@ class Sponsors extends Component {
                 "Bronze": [
                     {
                         "key": 3001,
-                        "Company": "google",
+                        "Company": "none",
                         "img_link": "https://vm26.sourcelab.ch/Sponsors/Bronze/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
                         "url": "https://www.Grümpi2023.sourcelab.ch"
                     }

@@ -12,32 +12,32 @@ class SponsorsPhone extends Component {
                     {
                         "key": 1,
                         "Company": "none",
-                        "img_link": "https://www.personal.ch/img/img/logo.svg",
-                        "url": "https://www.google.com/"
+                        "img_link": "https://vm26.sourcelab.ch/Sponsors/Platin/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
+                        "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
                 ],
                 "Gold": [
                     {
                         "key": 1001,
                         "Company": "none",
-                        "img_link": "https://www.personal.ch/img/img/logo.svg",
-                        "url": "https://www.google.com/"
+                        "img_link": "https://vm26.sourcelab.ch/Sponsors/Gold/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
+                        "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
                 ],
                 "Silber": [
                     {
                         "key": 2001,
                         "Company": "none",
-                        "img_link": "https://www.personal.ch/img/img/logo.svg",
-                        "url": "https://www.google.com/"
+                        "img_link": "https://vm26.sourcelab.ch/Sponsors/Silber/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
+                        "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
                 ],
                 "Bronze": [
                     {
                         "key": 3001,
                         "Company": "none",
-                        "img_link": "https://www.personal.ch/img/img/logo.svg",
-                        "url": "https://www.google.com/"
+                        "img_link": "https://vm26.sourcelab.ch/Sponsors/Bronze/Logo_Gruempi_ohne_Jahr_color_breitvektor.svg",
+                        "url": "https://www.Grümpi2023.sourcelab.ch"
                     }
                 ]
             }
