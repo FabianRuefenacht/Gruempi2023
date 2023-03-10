@@ -18,10 +18,10 @@ class HeaderPC extends Component {
       <>
         <div className="Header">
           <img src={Logo_Gruempi_ohne_Jahr_color_breitvektor} alt='Logo Grümpi 2023' />
-          <Link to="/" className='HeaderLink'>Home</Link>
-          <Link to="/FAQ" className='HeaderLink'>FAQ</Link>
-          <Link to="/Reglement" className='HeaderLink'>Reglement</Link>
-          <Link to="/Anmeldung" className='HeaderLink HeaderLinkAnmeldung'>Anmeldung</Link>
+          <Link to="/" className='HeaderLink' onClick={() => Window.scrollTo(0, 0)}>Home</Link>
+          <Link to="/FAQ" className='HeaderLink' onClick={() => Window.scrollTo(0, 0)}>FAQ</Link>
+          <Link to="/Reglement" className='HeaderLink' onClick={() => Window.scrollTo(0, 0)}>Reglement</Link>
+          <Link to="/Anmeldung" className='HeaderLink HeaderLinkAnmeldung' onClick={() => Window.scrollTo(0, 0)}>Anmeldung</Link>
         </div>
         <Routes>
           <Route path='/' element={<><Timer /><Instagram /></>} />

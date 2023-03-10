@@ -18,6 +18,11 @@ export default function HeaderPhone() {
     var now = new Date()
     const TablePlan = new Date(2023, 4, 5, 17, 0, 0, 0)
 
+    function handleClick() {
+        setNavBar(false)
+        Window.scrollTo(0, 0)
+    }
+
     return (
         <>
             <div className='BurgerWrapper'>
@@ -27,13 +32,13 @@ export default function HeaderPhone() {
                 </div>
                 {navBar &&
                     <aside className='AsidePhone'>
-                        <Link to="/" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>Home</Link>
-                        <Link to="/FAQ" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>FAQ</Link>
-                        <Link to="/Reglement" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>Reglement</Link>
+                        <Link to="/" onClick={() => handleClick()} className='HeaderLinkPhone HeaderLink'>Home</Link>
+                        <Link to="/FAQ" onClick={() => handleClick()} className='HeaderLinkPhone HeaderLink'>FAQ</Link>
+                        <Link to="/Reglement" onClick={() => handleClick()} className='HeaderLinkPhone HeaderLink'>Reglement</Link>
                         {now >= TablePlan &&
-                            <Link to="/Spielplan" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink'>Spielplan</Link>
+                            <Link to="/Spielplan" onClick={() => handleClick()} className='HeaderLinkPhone HeaderLink'>Spielplan</Link>
                         }
-                        <Link to="/Anmeldung" onClick={() => setNavBar(false)} className='HeaderLinkPhone HeaderLink HeaderLinkAnmeldung'>Anmeldung</Link>
+                        <Link to="/Anmeldung" onClick={() => handleClick()} className='HeaderLinkPhone HeaderLink HeaderLinkAnmeldung'>Anmeldung</Link>
                     </aside>
                 }
             </div>

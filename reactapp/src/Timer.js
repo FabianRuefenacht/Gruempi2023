@@ -88,7 +88,7 @@ class Timer extends Component {
                         Das FHNW Grümpi wird dieses Jahr vom G2021 organisiert.
                         <p className='PlayDate'>Der offizielle Termin ist der 11. Mai 2023.</p>
                         Mitmachen können alle, die an der FHNW in Muttenz studieren, dozieren oder arbeiten.
-                        <p className='PlayDate'>Meldet euch bis am XX.XX.2023 an.</p>
+                        <p className='PlayDate'>Meldet euch bis am 01. Mai 2023 an.</p>
                         Mehr Informationen zur Teilnahme und der Anmeldung findest Du im Register "Reglement".
                     </div>
                 </div>
