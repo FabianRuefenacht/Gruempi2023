@@ -19,7 +19,7 @@ class ReglementPhone extends Component {
                             <li>Wetter</li>
                         </h3>
                         <ol>
-                            <li type="a">Bei extremen Wetterverhältnissen wird das Grümpi auf den Ausweichtermin XX.XX.XXXX verschoben.</li>
+                            <li type="a">Bei extremen Wetterverhältnissen wird das Grümpi auf den Ausweichtermin 25. Mai 2023 verschoben.</li>
                             <li type="a">Wenn während des Turnieres extreme Platz- oder Wetterverhältnisse herrschen, kann das OK das Turnier unterbrechen oder abbrechen. Genauere Informationen dazu werden in diesem Fall am Speakertisch bekannt gegeben.</li>
                         </ol>
                         <h3>

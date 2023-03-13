@@ -12,7 +12,7 @@ class FAQ extends Component {
                     <Map zoom={17} center={[47.534025, 7.641420]} />
                     <h2>Wann findet das FHNW Grümpi 2023 statt?</h2>
                     <p>Das Grümpi findet am 11. Mai 2022 statt, der Anpfiff zum ersten Spiel ist voraussichtlich um 17.00 Uhr.</p>
-                    <p>Wenn das Wetter das Fussballspielen nicht zulässt, ist der Ausweichtermin am 25.Mai 2023.</p>
+                    <p>Wenn das Wetter das Fussballspielen nicht zulässt, ist der Ausweichtermin am 25. Mai 2023.</p>
                     <h2>Wer darf am Grümpi teilnehmen?</h2>
                     <p>
                         Wie auch in den letzten Jahren dürfen alle Studierenden und Mitarbeitenden der FHNW Muttenz teilnehmen.
