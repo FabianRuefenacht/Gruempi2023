@@ -28,6 +28,12 @@ class ReglementPhone extends Component {
                         <ol>
                             <li type="a">Über alle hier nicht aufgeführten Fälle entscheidet das OK endgültig.</li>
                         </ol>
+                        <h3>
+                            <li type="1">Social Media</li>
+                        </h3>
+                        <ol>
+                            <li type="a">Mit der Teilnahme am Grümpi stimmen Sie zu, dass Bilder, auf welchen Sie erkennbar sind, auf dem Instagram-Kanal fhnw.grümpi.2023 und auf dieser Website veröffentlicht werden.</li>
+                        </ol>
                     </ol>
                     <h2><strong className="romanCount">II</strong>.&nbsp;&nbsp;Team</h2>
                     <ol>
