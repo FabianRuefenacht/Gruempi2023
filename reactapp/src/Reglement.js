@@ -55,7 +55,7 @@ class Reglement extends Component {
                             <li type="1">Startgeld</li>
                         </h3>
                         <ol>
-                            <li type="a">Jedes Team muss eine Startgebühr von 25 Franken entrichten. Der Betrag wird pro Team eingezogen.</li>
+                            <li type="a">Jedes Team muss eine Startgebühr von 30 Franken entrichten. Der Betrag wird pro Team eingezogen.</li>
                             <li type="a">Die Gebühr ist vor Turnierbeginn am Speakertisch zu bezahlen.</li>
                             <li type="a">Das Startgeld kann in Bar oder via Twint bezahlt werden.</li>
                             <li type="a">Kann ein Team - aus welchen Gründen auch immer - das Turnier nicht beenden, wird die Startgebühr nicht erstattet.</li>
