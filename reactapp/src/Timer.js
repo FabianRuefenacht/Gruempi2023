@@ -74,7 +74,7 @@ class Timer extends Component {
     render() {
         return (
             <div className='TimerComponent'>
-                <div className={new Date() <= new Date(2023, 4, 6, 17, 0, 0, 0) ? 'Timer' : 'TimerLive'}>
+                <div className={new Date() <= new Date(2023, 4, 5, 9, 0, 0, 0) ? 'Timer' : 'TimerLive'}>
                     {this.state.today === 99 &&
                         (setInterval(() => {
                             this.getDay()
