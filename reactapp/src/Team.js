@@ -59,6 +59,7 @@ export default function Team() {
     }, [])
 
     let Games = timetable.Tabelle.filter((entry) => entry.Data.Team1.includes(`${id}`) || entry.Data.Team2.includes(`${id}`));
+    let Schiri = timetable.Tabelle.filter((entry) => entry.Data.Schiedsrichter.includes(`${id}`));
 
     return (
         <>
@@ -67,8 +68,47 @@ export default function Team() {
                 <h1>
                     Team {id}
                 </h1>
+                <h2>Spiele</h2>
                 <Grid container>
                     {Games.map((Teamname, i) => {
+                        return (
+                            <div key={i} className='TeamWrapper'>
+                                <Grid item className='TeamViewBox'>
+                                    <div>
+                                        <h3>
+                                            {Teamname.Data.Team1}
+                                        </ h3>
+                                        <div className='vs'>
+                                            vs.
+                                        </div>
+                                        <h3>
+                                            {Teamname.Data.Team2}
+                                        </h3>
+                                        <h4>
+                                            {Teamname.Data.Endresultat === '-1:-1' ? '' : Teamname.Data.Endresultat}
+                                        </h4>
+                                        <div className='SideInfoPadd'>
+                                            {Teamname.Data.Spielfunktion}
+                                        </div>
+                                        <div className='SideInfo'>
+                                            Feld: {Teamname.Data.Feld}
+                                        </div>
+                                        <div className='SideInfo'>
+                                            Anpfiff: {Teamname.Data.Anpfiff}
+                                        </div>
+                                        <div className='SideInfo'>
+                                            Schiedsrichter: {Teamname.Data.Schiedsrichter}
+                                        </div>
+                                    </div>
+                                </Grid>
+                            </div>
+                        )
+                    })}
+                </Grid>
+                
+                <h2>Schiedsrichter in folgenden Spielen</h2>
+                <Grid container>
+                    {Schiri.map((Teamname, i) => {
                         return (
                             <div key={i} className='TeamWrapper'>
                                 <Grid item className='TeamViewBox'>

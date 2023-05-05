@@ -28,8 +28,24 @@ class TimerPhone extends Component {
             var day = "00"
             var hours = "00"
             var mins = "00"
-        } else {
+        } else if (gr.getHours() - now.getHours() <= 0) {
             day = 130 - Math.floor(diff / oneDay);
+            if (day < 10) {
+                day = "0" + day
+            }
+            mins = 59 - now.getMinutes();
+            if (mins < 10) {
+                mins = "0" + mins
+            }
+            hours = 16 - now.getHours();
+            if (hours < 0) {
+                hours = 24 + hours
+            }
+            if (hours < 10) {
+                hours = "0" + hours
+            }
+        }else {
+            day = 131 - Math.floor(diff / oneDay);
             if (day < 10) {
                 day = "0" + day
             }

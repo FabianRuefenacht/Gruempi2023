@@ -83,19 +83,19 @@ export default function Map(props) {
                         <Popup>Sanität</Popup>
                     </Marker>
                     <Marker
-                        icon={BallIcon1}
+                        icon={BallIcon3}
                         position={[47.53328651456408, 7.639940750805408]}>
-                        <Popup>Platz 1</Popup>
+                        <Popup>Platz C</Popup>
                     </Marker>
                     <Marker
                         icon={BallIcon2}
                         position={[47.53335411628794, 7.639545806321593]}>
-                        <Popup>Platz 2</Popup>
+                        <Popup>Platz B</Popup>
                     </Marker>
                     <Marker
-                        icon={BallIcon3}
+                        icon={BallIcon1}
                         position={[47.53344237396243, 7.6391007984532]}>
-                        <Popup>Platz 3</Popup>
+                        <Popup>Platz A</Popup>
                     </Marker>
                 </>
             }

@@ -41,7 +41,7 @@ class ReglementPhone extends Component {
                             <li type="1">Teilnahmebedingung</li>
                         </h3>
                         <ol>
-                            <li type="a">Teilnahmeberechtigt sind alle Studierenden und Mitarbeitenden der FHNW Muttenz.</li>
+                            <li type="a">Teilnahmeberechtigt sind alle Studierenden und Mitarbeitenden der FHNW.</li>
                             <li type="a">Über Ausnahmen kann das OK entscheiden. Anfragen können via Mail <a className="GesuchAuswertige" href="mailto: andrea.bricalli@students.fhnw.ch">hier</a> gestellt werden.</li>
                         </ol>
                         <h3>

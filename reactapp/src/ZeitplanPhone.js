@@ -52,6 +52,8 @@ export default function ZeitplanPhone() {
 
     let Gruppenspiele = timetable.Tabelle.filter((entry) => entry.Data.Spielfunktion.includes('Gruppenspiel'));
 
+    let Viertelfinale = timetable.Tabelle.filter((entry) => entry.Data.Spielfunktion.includes('Viertelfinale'));
+
     let Halbfinale = timetable.Tabelle.filter((entry) => entry.Data.Spielfunktion.includes('Halbfinale'));
 
     let Finale = timetable.Tabelle.filter((entry) => entry.Data.Spielfunktion.includes('Finale'));
@@ -59,7 +61,7 @@ export default function ZeitplanPhone() {
     return (
         <>
             <div className='overflowxScrollPhone'>
-                <Grid container spacing={2} borderBottom={'1px solid #d0d0d0'} wrap={'nowrap'} width={'400px'}>
+                <Grid container spacing={2} wrap={'nowrap'} width={'400px'}>
                     <Grid item minWidth={'70px'}>
                         <h3>Start</h3>
                     </Grid>
@@ -85,9 +87,21 @@ export default function ZeitplanPhone() {
                         <Grid item minWidth={'70px'}>{GrpPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{GrpPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Team1}</Grid>
-                        <Grid item minWidth={'90px'}>{GrpPhase.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'90px'}>{GrpPhase.Data.Endresultat === '-1:-1' ? '' : GrpPhase.Data.Endresultat}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Team2}</Grid>
                         <Grid item minWidth={'250px'}>{GrpPhase.Data.Schiedsrichter}</Grid>
+                    </ Grid>
+                    )
+                })}
+                <h4>Viertelfinale:</h4>
+                {Viertelfinale.map((QuaFPhase, i) => {
+                    return (<Grid container key={i} paddingBottom={QuaFPhase.Data.Feld === 'C' ? '17px' : '10px'} wrap={'nowrap'} width={'400px'}>
+                        <Grid item minWidth={'70px'}>{QuaFPhase.Data.Anpfiff}</Grid>
+                        <Grid item minWidth={'70px'}>{QuaFPhase.Data.Feld}</Grid>
+                        <Grid item minWidth={'250px'}>{QuaFPhase.Data.Team1}</Grid>
+                        <Grid item minWidth={'90px'}>{QuaFPhase.Data.Endresultat === '-1:-1' ? '' : QuaFPhase.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'250px'}>{QuaFPhase.Data.Team2}</Grid>
+                        <Grid item minWidth={'250px'}>{QuaFPhase.Data.Schiedsrichter}</Grid>
                     </ Grid>
                     )
                 })}
@@ -97,7 +111,7 @@ export default function ZeitplanPhone() {
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{SemiFPhase.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Team1}</Grid>
-                        <Grid item minWidth={'90px'}>{SemiFPhase.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'90px'}>{SemiFPhase.Data.Endresultat === '-1:-1' ? '' : SemiFPhase.Data.Endresultat}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Team2}</Grid>
                         <Grid item minWidth={'250px'}>{SemiFPhase.Data.Schiedsrichter}</Grid>
                     </ Grid>
@@ -109,7 +123,7 @@ export default function ZeitplanPhone() {
                         <Grid item minWidth={'70px'}>{Finale.Data.Anpfiff}</Grid>
                         <Grid item minWidth={'70px'}>{Finale.Data.Feld}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Team1}</Grid>
-                        <Grid item minWidth={'90px'}>{Finale.Data.Endresultat}</Grid>
+                        <Grid item minWidth={'90px'}>{Finale.Data.Endresultat === '-1:-1' ? '' : Finale.Data.Endresultat}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Team2}</Grid>
                         <Grid item minWidth={'250px'}>{Finale.Data.Schiedsrichter}</Grid>
                     </ Grid>

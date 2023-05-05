@@ -1,0 +1,302 @@
+[
+  {
+    "id": "eWBMVvrdyv6lFvNPDhOhu",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Dominic Schär",
+      "Farbe": "#000000",
+      "Teamname": "Die blaue Geologe",
+      "div": "0",
+      "female": "3",
+      "mail": "fabian.ruefenacht@sudents.fhnw.ch",
+      "male": "7"
+    },
+    "createdAt": "2023-05-02T08:43:04.317Z",
+    "spam": false
+  },
+  {
+    "id": "kRudPZzUItJG1Z7BCf2rM",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Adrian Wagner",
+      "Farbe": "#ffffff",
+      "Teamname": "Sportfreunde Hinterduggige",
+      "div": "0",
+      "female": "0",
+      "mail": "adrian.wagner@students.fhnw.ch",
+      "male": "10"
+    },
+    "createdAt": "2023-05-01T20:43:45.545Z",
+    "spam": false
+  },
+  {
+    "id": "v2Ssj4H9urOpKbR5eGKVK",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Liria Magalhães",
+      "Farbe": "#000000",
+      "Teamname": "Peter ImTor",
+      "div": "0",
+      "female": "3",
+      "mail": "liria.magalhaes@students.fhnw.ch",
+      "male": "6"
+    },
+    "createdAt": "2023-05-01T14:58:35.578Z",
+    "spam": false
+  },
+  {
+    "id": "LCY4SGWnFiICIUm9bfyFg",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Cibik Selcuk",
+      "Farbe": "#000000",
+      "Teamname": "Auf Bewehrung",
+      "div": "0",
+      "female": "1",
+      "mail": "selcuk.cibik@students.fhnw.ch",
+      "male": "8"
+    },
+    "createdAt": "2023-04-28T09:45:00.476Z",
+    "spam": false
+  },
+  {
+    "id": "J55QQ5BAg7pzKEV5BxKCY",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Jonathan Daufeld",
+      "Farbe": "#000000",
+      "Teamname": "Trinat FC",
+      "div": "0",
+      "female": "1",
+      "mail": "aureliengabriel68@gmail.com",
+      "male": "8"
+    },
+    "createdAt": "2023-04-27T10:58:29.806Z",
+    "spam": false
+  },
+  {
+    "id": "x0byzB7ETR3qCm61XMRGE",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Andreas Kümmel",
+      "Farbe": "#ffffff",
+      "Teamname": "Diabetico Madrid",
+      "div": "0",
+      "female": "0",
+      "mail": "andreas.kuemmel@students.fhnw.ch",
+      "male": "8"
+    },
+    "createdAt": "2023-04-27T08:36:27.580Z",
+    "spam": false
+  },
+  {
+    "id": "0DdGgNcMx4F6QCGSIJuVq",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Julian Traugott",
+      "Farbe": "#ea61df",
+      "Teamname": "Le Goalbusier",
+      "div": "0",
+      "female": "0",
+      "mail": "julian.traugott@students.fhnw.ch",
+      "male": "7"
+    },
+    "createdAt": "2023-04-21T14:22:40.144Z",
+    "spam": false
+  },
+  {
+    "id": "QFUKa5ChftBGCD0YPC0fk",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Driton Komani",
+      "Farbe": "#f5ec00",
+      "Teamname": "iBall",
+      "div": "0",
+      "female": "1",
+      "mail": "driton.komani@fhnw.ch",
+      "male": "9"
+    },
+    "createdAt": "2023-04-20T07:31:48.218Z",
+    "spam": true
+  },
+  {
+    "id": "U5XQKtPvxQ0CMTS0y4DGQ",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Davide Vitale",
+      "Farbe": "#0073ff",
+      "Teamname": "Die Undrainierten",
+      "div": "0",
+      "female": "0",
+      "mail": "yannik.jaggi@students.fhnw.ch",
+      "male": "9"
+    },
+    "createdAt": "2023-04-19T14:50:10.539Z",
+    "spam": false
+  },
+  {
+    "id": "L5M0p8S5AvoFmJHxFbTWN",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Angelo",
+      "Farbe": "#ffffff",
+      "Teamname": "FC Fuxnume10is",
+      "div": "0",
+      "female": "0",
+      "mail": "angelo.ramos@students.fhnw.ch",
+      "male": "8"
+    },
+    "createdAt": "2023-04-13T13:36:16.417Z",
+    "spam": false
+  },
+  {
+    "id": "81WrJnkanGPzI3gHXXBgV",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Chenaux Alec",
+      "Farbe": "#669d34",
+      "Teamname": "80% awäsend",
+      "div": "0",
+      "female": "3",
+      "mail": "alec.chenaux@students.fhnw.ch",
+      "male": "5"
+    },
+    "createdAt": "2023-04-11T13:16:55.589Z",
+    "spam": false
+  },
+  {
+    "id": "b1BwKnBm8wFEVs0Capm4y",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Meier Yanis",
+      "Farbe": "#4f7a28",
+      "Teamname": "Sportfreunde Muttenz",
+      "div": "0",
+      "female": "0",
+      "mail": "yanis.meier@students.fhnw.ch",
+      "male": "12"
+    },
+    "createdAt": "2023-04-11T11:46:37.648Z",
+    "spam": false
+  },
+  {
+    "id": "8UynnvyKc3rHLTaubi7LE",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Emre Karabasoglu",
+      "Farbe": "#a21606",
+      "Teamname": "Geospatial Gladiators",
+      "div": "0",
+      "female": "2",
+      "mail": "emre.karabasoglu@students.fhnw.ch",
+      "male": "8"
+    },
+    "createdAt": "2023-04-04T13:00:45.972Z",
+    "spam": false
+  },
+  {
+    "id": "lF9zrPOG84pPKDwX9E6x3",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Bilalli Gentian ",
+      "Farbe": "#000000",
+      "Teamname": "Die Seitenstecher ",
+      "div": "0",
+      "female": "3",
+      "mail": "gentian.bilalli@students.fhnw.ch",
+      "male": "5"
+    },
+    "createdAt": "2023-04-02T10:29:10.494Z",
+    "spam": false
+  },
+  {
+    "id": "gg4DR7WMeauKXxg04a9oh",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Raphael Gysin",
+      "Farbe": "#ffffff",
+      "Teamname": "Grasfresser United",
+      "div": "0",
+      "female": "1",
+      "mail": "raphi.gysin@gmail.com",
+      "male": "7"
+    },
+    "createdAt": "2023-04-01T19:28:06.583Z",
+    "spam": false
+  },
+  {
+    "id": "WhaTSGeFQ39eQRRH85u52",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Weger Feline",
+      "Farbe": "#0001fc",
+      "Teamname": "Analysis 8",
+      "div": "0",
+      "female": "3",
+      "mail": "feline.weger@students.fhnw.ch",
+      "male": "6"
+    },
+    "createdAt": "2023-03-30T10:31:41.021Z",
+    "spam": false
+  },
+  {
+    "id": "qG6m3akDCcqDeutIkBL6H",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Miro Jutz",
+      "Farbe": "#ff0000",
+      "Teamname": "Triangulierende Tornados",
+      "div": "0",
+      "female": "1",
+      "mail": "miro.jutz@students.fhnw.ch",
+      "male": "8"
+    },
+    "createdAt": "2023-03-30T09:27:08.443Z",
+    "spam": false
+  },
+  {
+    "id": "DtdOwx8RnOKNq3jdUFZT8",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Nando Amport",
+      "Farbe": "#850000",
+      "Teamname": "Winkel-Bölzer",
+      "div": "0",
+      "female": "1",
+      "mail": "nando.amport@students.fhnw.ch",
+      "male": "8"
+    },
+    "createdAt": "2023-03-28T11:02:04.846Z",
+    "spam": false
+  },
+  {
+    "id": "NJWWSFhqkbWrWvNdUPK9f",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Kastriot Ferati",
+      "Farbe": "#012f7b",
+      "Teamname": "RoadToIstanbul",
+      "div": "0",
+      "female": "0",
+      "mail": "kastriot_ferati@hotmail.com",
+      "male": "10"
+    },
+    "createdAt": "2023-03-28T09:33:15.339Z",
+    "spam": false
+  },
+  {
+    "id": "SyJsLu1iT30z18SBZfvKQ",
+    "formId": "eqX8Uq4J",
+    "data": {
+      "Captain": "Castro David",
+      "Farbe": "#000000",
+      "Teamname": "Bauing Allstars",
+      "div": "0",
+      "female": "3",
+      "mail": "david.castrosouto@students.fhnw.ch",
+      "male": "11"
+    },
+    "createdAt": "2023-03-24T09:36:38.440Z",
+    "spam": false
+  }
+]

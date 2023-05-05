@@ -15,8 +15,8 @@ class FAQPhone extends Component {
                     <p>Wenn das Wetter das Fussballspielen nicht zulässt, ist der Ausweichtermin am 25. Mai 2023.</p>
                     <h2>Wer darf am Grümpi teilnehmen?</h2>
                     <p>
-                        Wie auch in den letzten Jahren dürfen alle Studierenden und Mitarbeitenden der FHNW Muttenz teilnehmen.
-                        Wer nicht an der FHNW Muttenz studiert oder arbeitet, aber dennoch ein Team stellen will, kann <a className="GesuchAuswertige" href="mailto: andrea.bricalli@students.fhnw.ch">hier</a> um eine Genehmigung bitten.
+                        Wie auch in den letzten Jahren dürfen alle Studierenden und Mitarbeitenden der FHNW teilnehmen.
+                        Wer nicht an der FHNW studiert oder arbeitet, aber dennoch ein Team stellen will, kann sich <a className="GesuchAuswertige" href="mailto: andrea.bricalli@students.fhnw.ch">hier</a> melden.
                     </p>
                     <h2>Wie viele Frauen müssen in einem Team sein?</h2>
                     <p>Da die Verteilung der Geschlechter über die verschiedenen Studiengänge sehr unterschiedlich ist, gibt es keine feste Regel dazu. Wir werden aber alles daran setzen, dass die Gruppenphase möglichst ausgeglichen sein wird.</p>

@@ -30,8 +30,24 @@ class Timer extends Component {
             var day = "00"
             var hours = "00"
             var mins = "00"
-        } else {
+        } else if (gr.getHours() - now.getHours() <= 0) {
             day = 130 - Math.floor(diff / oneDay);
+            if (day < 10) {
+                day = "0" + day
+            }
+            mins = 59 - now.getMinutes();
+            if (mins < 10) {
+                mins = "0" + mins
+            }
+            hours = 16 - now.getHours();
+            if (hours < 0) {
+                hours = 24 + hours
+            }
+            if (hours < 10) {
+                hours = "0" + hours
+            }
+        }else {
+            day = 131 - Math.floor(diff / oneDay);
             if (day < 10) {
                 day = "0" + day
             }
@@ -92,7 +108,7 @@ class Timer extends Component {
                         Mehr Informationen zur Teilnahme und der Anmeldung findest Du im Register "Reglement".
                     </div>
                 </div>
-                {new Date() >= new Date(2023, 4, 6, 17, 0, 0, 0) &&
+                {new Date() >= new Date(2023, 4, 5, 9, 0, 0, 0) &&
                     <div className='Live'>
                         <div className='LiveInAv'>Spielplan <br /> <br /> &nbsp; &nbsp; &nbsp;Live</div>
                         <svg className='SVGDot'>

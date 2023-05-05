@@ -12,9 +12,9 @@ export default function Anmeldung() {
     const [male, setMale] = useState(' ');
     const [female, setFemale] = useState(' ');
     const [div, setDiv] = useState(' ');
-    const [color, setColor] = useState(' ');
+    const [color, setColor] = useState('#000000');
 
-    const Anmeldeschluss = new Date(2023, 4, 1, 0, 0, 0, 1);
+    const Anmeldeschluss = new Date(2023, 4, 1, 23, 59, 59, 99);
 
     const [Teams, setTeams] = useState({
         "registered": [
@@ -250,7 +250,7 @@ export default function Anmeldung() {
                     return (
                         <div key={renderTeams.id} className='TeamWrapper'>
                             <Grid item className='Teamcontainer TeamsBGProvider' >
-                                <Link to={`/Teams/${renderTeams.data.Teamname}`} className='texteco'>
+                                <Link to={renderTeams.data.Teamname === '80% awäsend' ? '/Teams/80%25 awäsend' : `/Teams/${renderTeams.data.Teamname}`} className='texteco'>
                                     <h3>{renderTeams.data.Teamname}</h3><br />
                                 </Link>
                                 <p>{JSON.parse(renderTeams.data.male) + JSON.parse(renderTeams.data.female) + JSON.parse(renderTeams.data.div)} Spielende</p>

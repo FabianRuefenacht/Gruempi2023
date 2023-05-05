@@ -1,0 +1,59 @@
+{
+    "Tabelle": [
+        {
+            "Data": {
+                "Spielfunktion": "Gruppenspiel",
+                "Anpfiff": "17:00",
+                "Feld": "A",
+                "Team1": "Bauing Allstars",
+                "Endresultat": "2:1",
+                "Team2": "Team B",
+                "Schiedsrichter": "Team C"
+            }
+        },
+        {
+            "Data": {
+                "Spielfunktion": "Gruppenspiel",
+                "Anpfiff": "17:00",
+                "Feld": "B",
+                "Team1": "Team D",
+                "Endresultat": "-1:-1",
+                "Team2": "Team E",
+                "Schiedsrichter": "Team F"
+            }
+        },
+        {
+            "Data": {
+                "Spielfunktion": "Gruppenspiel",
+                "Anpfiff": "17:00",
+                "Feld": "C",
+                "Team1": "Team 2",
+                "Endresultat": "-1:-1",
+                "Team2": "Team Y",
+                "Schiedsrichter": "Team X"
+            }
+        },
+        {
+            "Data": {
+                "Spielfunktion": "Halbfinale",
+                "Anpfiff": "19:00",
+                "Feld": "B",
+                "Team1": "Team F",
+                "Endresultat": "-1:-1",
+                "Team2": "Team G",
+                "Schiedsrichter": "Team H"
+            }
+        },
+        {
+            "Data": {
+                "Spielfunktion": "Finale",
+                "Anpfiff": "19:30",
+                "Feld": "B",
+                "Team1": "Team I",
+                "Endresultat": "-1:-1",
+                "Team2": "Team 2",
+                "Schiedsrichter": "Team K"
+            }
+        }
+    ]
+}

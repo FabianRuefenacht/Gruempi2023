@@ -1,0 +1,84 @@
+{
+    "Gruppe": [
+        {
+            "Data": {
+                "GrpNm": "GruppeA",
+                "Name": "Bauing Allstars",
+                "Spiele": {
+                    "Spiel1": "0",
+                    "Spiel2": "1",
+                    "Spiel3": "3"
+                },
+                "TorDiff": {
+                    "Spiel1": "0",
+                    "Spiel2": "1",
+                    "Spiel3": "3"
+                }
+            }
+        },
+        {
+            "Data": {
+                "GrpNm": "GruppeA",
+                "Name": "A2",
+                "Spiele": {
+                    "Spiel1": "10",
+                    "Spiel2": "1",
+                    "Spiel3": "3"
+                },
+                "TorDiff": {
+                    "Spiel1": "0",
+                    "Spiel2": "1",
+                    "Spiel3": "3"
+                }
+            }
+        },
+        {
+            "Data": {
+                "GrpNm": "GruppeA",
+                "Name": "A1",
+                "Spiele": {
+                    "Spiel1": "10",
+                    "Spiel2": "1",
+                    "Spiel3": "3"
+                },
+                "TorDiff": {
+                    "Spiel1": "0",
+                    "Spiel2": "1",
+                    "Spiel3": "4"
+                }
+            }
+        },
+        {
+            "Data": {
+                "GrpNm": "GruppeB",
+                "Name": "B2",
+                "Spiele": {
+                    "Spiel1": "0",
+                    "Spiel2": "1",
+                    "Spiel3": "-3"
+                },
+                "TorDiff": {
+                    "Spiel1": "0",
+                    "Spiel2": "10",
+                    "Spiel3": "-3"
+                }
+            }
+        },
+        {
+            "Data": {
+                "GrpNm": "GruppeC",
+                "Name": "C1",
+                "Spiele": {
+                    "Spiel1": "0",
+                    "Spiel2": "-1",
+                    "Spiel3": "-3"
+                },
+                "TorDiff": {
+                    "Spiel1": "0",
+                    "Spiel2": "1",
+                    "Spiel3": "-3"
+                }
+            }
+        }
+    ]
+}
